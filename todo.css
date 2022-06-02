@@ -53,7 +53,7 @@ h2{
     list-style-type: none;
     line-height: 2em;
     padding-inline-start:0;
-    text-decoration: line-through;
+   
 
     }
 
@@ -61,46 +61,24 @@ h2{
     width: 30px;
     height: 30px;
     line-height: 10px;
-    border: none;
-    background-color: rgb(226, 11, 101);
-         color: rgb(230, 27, 128);
-    /* margin: auto;     */
+    border-radius: 50%;
     cursor: pointer;
-    
-    /* outline: none; */
-    /* padding: 5px; */
-    /* right: 35px;
-    bottom: px; */
-    /* vertical-align: center;
-    /* position:relative;
-    float: center; */ 
-    
-
+    accent-color: #e32074;
+  
 }
 
 
  .deletebtn{
-    
-        /* float: left; */
-    /* position: static; */
-    padding: 100px,;
+     padding: 100px,;
     font-size: 25px;
     line-height: 1em;
     background: none;
-    /* margin-right: auto; */
     color: red;
     border: none;
     outline: none;
     cursor: pointer;
-    /* position: relative; */
-    /* float: right; */
-}
-/*      
- .line{
-         text-decoration: line-through;
-        
-         
-     }  */
+   }
+
      
  
 
@@ -121,6 +99,8 @@ h2{
 }
 
 
-.span{
-    text-decoration: line-through;
+
+
+.checked{
+    text-decoration: line-through; 
 }
