@@ -2,7 +2,8 @@ let myForm =document.getElementById("myForm");
 let input =document.getElementById("input");
 let myList =document.getElementById("myList");
 let h2 =document.getElementById("h2");
-let checkbox =document.getElementById("checkbox");
+// let checkbox =document.getElementById("checkbox");
+let taskBox = document.querySelector(".ul");
 
 
 myForm.addEventListener("submit", (data) => {
@@ -13,23 +14,39 @@ myForm.addEventListener("submit", (data) => {
 )
 
 createItem = (d) =>{
-    let myTemplate = `<li class="list"><div class="list-items"><input id="checkbox" type="checkbox" class="checkbox" class="line"/><span> ${d}</span> </div><button onclick="deleteItem(this)" class="deletebtn"><i class="fa fa-trash"></i></button></ li>`
+    let myTemplate = `<li class="list" class="line" id="list" onclick=""><div  class="list-items"><input id="myCheckBox" type="checkbox" class="checkbox" 
+     > <span id="inputValue" > ${d}</span></input></div><button onclick="deleteItem(this)" class="deletebtn"><i class="fa fa-trash"></i></button></ li>`
     myList.insertAdjacentHTML("beforeend" , myTemplate)
     input.value = "";
     input.focus();
     h2.style.display = 'none';
-   
+    
+
    
     
 }
-
+  
 deleteItem =(x)=>{
     x.parentElement.remove();
 
 }
 
+var list = document.querySelector('ul');
 
-// checkbox.addEventListener("click", (checkbox === true){
-//     checkbox.body.style.background=  'line-through'
-// })
-    
+
+
+list.addEventListener("click", function(ev) {
+  console.log(ev.target.querySelector("list"))
+  if (ev.target.tagName === 'LI') {          
+    ev.target.classList.toggle('checked');  
+  }
+},false);
+
+
+
+
+
+
+
+
+

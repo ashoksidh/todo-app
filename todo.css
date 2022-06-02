@@ -45,11 +45,15 @@ h2{
     
 
 }
+.textinput p.checked{
+    text-decoration: line-through;
+}
 
 .ul{
     list-style-type: none;
     line-height: 2em;
     padding-inline-start:0;
+    text-decoration: line-through;
 
     }
 
@@ -62,13 +66,16 @@ h2{
          color: rgb(230, 27, 128);
     /* margin: auto;     */
     cursor: pointer;
+    
     /* outline: none; */
     /* padding: 5px; */
     /* right: 35px;
     bottom: px; */
     /* vertical-align: center;
     /* position:relative;
-    float: center; */ */
+    float: center; */ 
+    
+
 }
 
 
@@ -88,14 +95,12 @@ h2{
     /* position: relative; */
     /* float: right; */
 }
-     
- 
-
-     .line{
+/*      
+ .line{
          text-decoration: line-through;
-         background-color: rgb(226, 11, 101);
+        
          
-     }
+     }  */
      
  
 
@@ -112,4 +117,10 @@ h2{
     justify-content: flex-start;
     align-items: center;
     gap:18px ;
+    
+}
+
+
+.span{
+    text-decoration: line-through;
 }
